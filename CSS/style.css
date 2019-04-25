@@ -1,0 +1,269 @@
+body{
+  background-image: url("img/stripes-light.png");
+}
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+.left{
+  float: left;
+  width: 100px;
+  height: 1000px;
+}
+.main{
+  float: left;
+  width: 1000px;
+}
+.right{
+  float:left;
+  width: 100px;
+  height: 1000px;
+  position: relative;
+}
+.overTitle{
+
+}
+.title{
+  font-family: 'Pacifico', cursive;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 64px;
+  text-align: center;
+  line-height: 50px;
+  padding: 30px;
+}
+.title1{
+  text-shadow: 0px 0px 14px rgba(0, 0, 0, .55);
+}
+.title2{
+  font-size: 40px;
+  text-align: right;
+}
+.menu{
+  width: 1000px;
+  background-color: #2b2a27fa;
+  text-align: center;
+  position: relative;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.option{
+  position: relative;
+  top: 0;
+  left: 200px;
+  height: 40px;
+  width: 150px;
+  border-top: 2px solid #2b2a27fa;
+  border-bottom: 2px solid #2b2a27fa;
+  display: table;
+  float: left;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  transition: .5s ease-in-out;
+
+}
+.option > span{
+  display: table-cell;
+  vertical-align: middle;
+}
+.option:hover{
+  font-weight: 900;
+  background-color: #efefef;
+  cursor: pointer;
+  opacity: 0.9;
+  color: #2b2a27fa;
+}
+.slider{
+  height: 500px;
+  background-color: #efefef;
+  border: 10px solid #2b2a27fa;
+  border-top:none;
+  border-bottom-left-radius : 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0;
+  position: relative;
+}
+.slider > span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.workspace{
+  background-color: white;
+  border-radius: 10px;
+  width: 900px;
+  margin-top: 25px;
+  height: 500px;
+  padding: 25px 50px 25px 50px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.footer{
+  width: 1000px;
+  height: 45px;
+  text-align: center;
+  background-color: #2f2e2b24;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Lato', sans-serif;
+  padding-top: 25px;
+  font-size: 15px;
+}
+.socials{
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 875px;
+  height: 150px;
+  background-color: #2f2e2b;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 125px;
+}
+.mail{
+  float: left;
+  font-size: 72px;
+  height: 150px;
+  width: 250px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fb{
+  float: left;
+  font-size: 72px;
+  height: 150px;
+  width: 250px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone{
+  float: left;
+  font-size: 72px;
+  height: 150px;
+  width: 250px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mail:hover{
+  cursor: pointer;
+  background-color: #e91e1ed1;
+  opacity: 0.9;
+}
+.fb:hover{
+  cursor: pointer;
+  background-color: #4668b3;
+  opacity: 0.9;
+}
+.phone:hover{
+  cursor: pointer;
+  background-color: #4caf50;
+  opacity: 0.9;
+}
+.infoLinker{
+  width: 800px;
+  padding: 25px;
+  /*margin-top: 25px; /**dalczego margines tutaj nie działą ?, w sensie dla diva workspace*/
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px dotted #2f2e2b;
+  /*border-radius: 5px;*/
+}
+.infoLinker:first-child{
+  border: none;
+}
+.infoLinker > .overlay > a > img {
+  width: 200px;
+  height: 200px;
+  float: left;
+  border-radius: 5px;
+}
+.Text{
+  float: left;
+  margin-left: 25px;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.overlay{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  float: left;
+}
+.overlay .link{
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #c5c5c5b8;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  text-align: center;
+  border-radius: 5px;
+}
+.overlay:hover  .link{
+  opacity: 0.7;
+}
+.icon{
+	display: block;
+	top: 25%;
+	position: relative;
+	font-size: 100px;
+}
+.phoneS{
+  text-align: center;
+  width: 250px;
+  height: 200px;
+  margin-top: 245px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+.phoneText{
+  line-height: 30px;
+  text-align: center;
+  margin: 10px 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.sticky{
+  margin: 10px 50px;
+  position: sticky;
+  left: 0;
+  top: 5%; /* jak działa to 5%, bo dla px nie ustawia się ?*/
+  /*z-index: 100;*/
+}
