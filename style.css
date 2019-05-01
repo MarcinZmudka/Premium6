@@ -1,77 +1,80 @@
 body{
-  background-image: url("img/stripes-light.png");
+  background-image: url("images/stripes-light.png");
   font-family: 'Lato', sans-serif;
 }
 .container{
-/*  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;*/
+  padding: 0;
+  margin: 0;
 }
 .left{
-  /*float: left;
+  float: left;
   width: 100px;
-  height: 1623px;*/
+  height: 1623px;
 }
 .main{
-  /*float: left;
-  width: 1000px;*/
-}
-.right{
-  /*float:left;
-  width: 100px;
-  height: 1623px;*/
   position: relative;
 }
+.right{
+  float:left;
+  width: 100px;
+  height: 1623px;
+  position: relative;
+}
+.overTitle{
+
+}
 .title{
-  /*font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', cursive;
   border-radius: 10px;
-  margin-top: 50px;
-  margin-bottom: 25px;
-/*  font-size: 64px;*/
-  /*text-align: center;
-  line-height: 50px;
-  padding: 30px;
-  text-align: center;*/
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
 }
 .title1{
+  font-size: 350%;
   text-shadow: 0px 0px 14px rgba(0, 0, 0, .55);
-  font-size: 12px;
-  line-height: 50px;
 }
 .title2{
-  /*font-size: 40px;*/
-  text-align: right;
+  font-size: 200%;
 }
 .sliderContainer{
-  width: minmax(auto, 1000px);
+  width: 100%;
   height: auto;
-
   display: flex;
 }
 .menu{
-  /*width: 1000px;*/
   background-color: #2b2a27fa;
   text-align: center;
-  position: relative;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .option{
-/*  position: relative;
-  top: 0;
-  left: 200px;
-  height: 40px;
-  width: 150px;*/
-  border-top: 2px solid #2b2a27fa;
-  border-bottom: 2px solid #2b2a27fa;
   display: table;
   float: left;
+  width: 20%;
+  border-top: 2px solid #2b2a27fa;
+  border-bottom: 2px solid #2b2a27fa;
   color: white;
   font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: ;
   transition: .5s ease-in-out;
-
+}
+.optionS{
+  display: table;
+  float: left;
+  width: 20%;
+  border-top: 2px solid #2b2a27fa;
+  border-bottom: 2px solid #2b2a27fa;
+  font-family: 'Lato', sans-serif;
+  font-size: ;
+  font-weight: 900;
+  opacity: .9;
+  transition: .5s ease-in-out;
+  background-color: white;
+  color: #2b2a27fa;
 }
 .option > span{
   font-family: 'Lato', sans-serif;
@@ -85,36 +88,17 @@ body{
   opacity: 0.9;
   color: #2b2a27fa;
 }
-.optionS{
-  /*position: relative;
-  top: 0;
-  left: 200px;
-  height: 40px;
-  width: 150px;*/
-  border-top: 2px solid #2b2a27fa;
-  border-bottom: 2px solid #2b2a27fa;
-  display: table;
-  float: left;
-  color: white;
 
-  font-size: 20px;
-  font-weight: 900;
-  background-color: white;
-  cursor: pointer;
-  opacity: 0.9;
-  color: #2b2a27fa;
-}
 .optionS > span{
   font-family: 'Lato', sans-serif;
   display: table-cell;
   vertical-align: middle;
 }
 .slider{
-  /*height: 500px;
-  width: 1000px;*/
-  background-color: #efefef;
-  /*border: 10px solid #2b2a27fa;*/
-  border-top:none;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  border-top: none;
   border-bottom-left-radius : 5px;
   border-bottom-right-radius: 5px;
   margin: 0;
@@ -153,10 +137,10 @@ body{
   z-index: 100;
 }
 .workspace{
+  position: relative;
   background-color: white;
   border-radius: 10px;
-/*  width: 900px;
-  height: 500px;*/
+  width: 100%;
   margin-top: 25px;
   padding: 25px 50px 25px 50px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -164,67 +148,68 @@ body{
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 .footer{
-/*  width: 1000px;
-  height: 45px;*/
+  width: 100%;
+  height: 5%;
   text-align: center;
   background-color: #2f2e2b24;
-  margin-top: 20px;
+  margin-top: 2%;
+  padding: 1%;
   border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Lato', sans-serif;
-  padding-top: 25px;
-  font-size: 15px;
 }
 .socials{
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2%;
   border-radius: 5px;
-  width: 875px;
-  height: 150px;
+  width: 100%;
   background-color: #2f2e2b;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 125px;
-}
-.mail{
-  float: left;
-  font-size: 72px;
-  height: 150px;
-  width: 250px;
-  margin-left: 0;
-  margin-right: 0;
-  text-align: center;
-  transition: all 0.5s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 10vh;
+  color: black;
+}
+
+.mail{
+  float: left;
+  position: relative;
+  width: 25%;
+  height: 100%;
+  padding-top: 15%;
+}
+.mail i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 .fb{
   float: left;
-  font-size: 72px;
-  height: 150px;
-  width: 250px;
-  margin-left: 0;
-  margin-right: 0;
-  text-align: center;
-  transition: all 0.5s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  width: 25%;
+  height: 100%;
+  padding-top: 15%;
+}
+.fb i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 .phone{
   float: left;
-  font-size: 72px;
-  height: 150px;
-  width: 250px;
-  margin-left: 0;
-  margin-right: 0;
-  text-align: center;
-  transition: all 0.5s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  width: 25%;
+  height: 100%;
+  padding-top: 15%;
+}
+.phone i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 .mail:hover{
   cursor: pointer;
@@ -242,70 +227,95 @@ body{
   opacity: 0.9;
 }
 .infoLinker{
-  width: 800px;
-  padding: 25px;
+  padding: 3%;
   /*margin-top: 25px; /**dalczego margines tutaj nie działą ?, w sensie dla diva workspace*/
   margin-left: auto;
   margin-right: auto;
   border-top: 1px dotted #2f2e2b;
   /*border-radius: 5px;*/
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .infoLinker:first-child{
   border: none;
 }
+.infoLinker  .overlay  a{
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
 .infoLinker > .overlay > a > img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   float: left;
   border-radius: 5px;
 }
 .Text{
   float: left;
-  margin-left: 25px;
+  margin: 0;
+  margin: 0 5% 0 5%;
   font-family: 'Lato', sans-serif;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 150%;
+  width: 65%;
+  height: 100%;
+  line-height: 100%;
+}
+.Text a:hover  {
+  text-decoration: none;
+  color: #272621ab;
+}
+
+.Text span{
+  display: block;
+  margin-top: 2vh;
+  font-size: 70%;
+  font-weight: 400;
 }
 a{
   text-decoration: none;
   color: black;
 }
 .overlay{
-  position: relative;
-  height: 200px;
-  width: 200px;
+  width: 25%;
+  height: 100%;
   float: left;
+  position: relative;
 }
-.overlay .link{
+.link{
   transition: opacity 0.5s ease-in-out;
-  position: absolute;
-  display: block;
   width: 100%;
   height: 100%;
   background-color: #c5c5c5b8;
-  left: 0px;
-  top: 0px;
   opacity: 0;
-  text-align: center;
   border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .overlay:hover  .link{
   opacity: 0.7;
+  color: black;
 }
 .icon{
-	display: block;
-	top: 25%;
-	position: relative;
-	font-size: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	font-size: 7vw;
 }
 .phoneS{
+  width: 60%;
   text-align: center;
-  width: 250px;
-  height: 250px;
-  margin-top: 245px;
   background-color: white;
   border: 3px solid black;
   border-radius: 5px;
-  margin-left: 50px;
+  margin-top: 61%;
+  margin-left: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -324,10 +334,10 @@ a{
   border-bottom: 1px solid black;
 }
 .sticky{
-  margin: 10px 50px;
+  margin: 0 25px;
   position: sticky;
   left: 0;
-  top: 5%; /* jak działa to 5%, bo dla px nie ustawia się ?*/
+  top: 5vh;
 }
 #T1{
   font-size: 16px;
@@ -339,12 +349,18 @@ a{
 }
 
 .ov{
-  /*width: 1000px;
-  height: 500px;*/
+  width: 100%;
+  height: 100%;
   position: relative;
   letter-spacing: 0.7px;
 }
+.ov a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
 .ov .link0{
+  color: black;
   display: block;
   top: 80%;
   left: 0;
@@ -354,15 +370,16 @@ a{
   background-color: white;
   opacity: 0;
   transition: all .5s ease-in-out;
-  padding: 20px;
-  font-size: 20px;
-  line-height: 30px;
+  padding: 2%;
+  letter-spacing: 1px;
+  text-decoration: none;
 }
 .ov:hover .link0{
   opacity: 0.7;
+  text-decoration: none;
 }
 .link0 > span{
-  font-size: 25px;
+  font-size: 150%;
   font-weight: 600;
 }
 .ov .link1{
@@ -375,9 +392,8 @@ a{
   background-color: #2b2a27fa;
   opacity: 0;
   transition: all .5s ease-in-out;
-  padding: 20px;
-  font-size: 20px;
-  line-height: 30px;
+  padding: 2%;
+  letter-spacing: 1px;
   color: white;
 }
 .link1 > span{
@@ -397,9 +413,8 @@ a{
   background-color: #2b2a27fa;
   opacity: 0;
   transition: all .5s ease-in-out;
-  padding: 20px;
-  font-size: 20px;
-  line-height: 30px;
+  padding: 2%;
+  letter-spacing: 1px;
   color: white;
 }
 .ov:hover .link2{
@@ -419,9 +434,8 @@ a{
   background-color: #2b2a27fa;
   opacity: 0;
   transition: all .5s ease-in-out;
-  padding: 20px;
-  font-size: 20px;
-  line-height: 30px;
+  padding: 2%;
+  letter-spacing: 1px;
   color: white;
 }
 .ov:hover .link3{
@@ -430,4 +444,8 @@ a{
 .link3 > span{
   font-size: 25px;
   font-weight: 600;
+}
+.ov a img {
+  /*width: 100%;
+  height: auto;*/
 }
