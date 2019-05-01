@@ -8,8 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello-9a024fff/css/fontello.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script type="text/javascript" src = "jquery-3.4.0.min.js"></script>
     <script type="text/javascript" src = "scroll.js"></script>
+    <script type="text/javascript" src = "slider.js"></script>
     <title>Apartament Premium 6</title>
   </head>
   <body>
@@ -25,22 +27,49 @@
           </div>
         </div>
         <nav class="menu">
-          <div class="option">
+          <div class="option" id="1">
             <span>Strona Główna</span>
           </div>
-          <div class="option">
+          <div class="option" id="2">
             <span>Apartment</span>
           </div>
-          <div class="option">
+          <div class="option" id="3">
             <span>Atrakcje</span>
           </div>
-          <div class="option">
+          <div class="option" id="4">
             <span>Kontakt</span>
           </div>
           <div style="clear: both;"></div>
         </nav>
         <div class="slider">
-          <span>Slider</span>
+          <i class="fas fa-arrow-left" id="prevBtn"></i>
+          <i class="fas fa-arrow-right" id="nextBtn"></i>
+          <div class="sliderContainer">
+            <div class="ov">
+              <a href="#"> <img src="images/kontakt.jpg" alt="" id="lastClone"></a>
+              <a href="#" class="link0"><span>Kontakt</span><br>Uzyskaj informacje na temat cen, dostępnych terminów oraz wskazówek dojazdu!</a>
+            </div>
+            <div class="ov">
+              <a href="#"><img src="images/stronaG.jpg" alt="" ></a>
+              <a href="#" class="link1"><span>Zapraszamy!</span><br>Rozejrzyj się na naszej stronie i dowiedz się wiecej o naszym apartamencie</a>
+            </div>
+            <div class="ov">
+              <a href="#"><img src="images/apartament.jpg" alt="" ></a>
+              <a href="#" class="link2"><span>Apartament</span><br>Tutaj dowiesz się wiecej o tym co nasz Apartament ma do zaoferowania</a>
+            </div>
+            <div class="ov">
+              <a href="#"><img src="images/atrakcje.jpg" alt="" ></a>
+              <a href="#" class="link3"><span>Atrakcje</span><br>Myślisz, że Białka to tylko Termy ? Grubo się mylisz !</a>
+            </div>
+            <div class="ov">
+              <a href="#"><img src="images/kontakt.jpg" alt="" >v</a>
+              <a href="#" class="link0"><span>Kontakt</span><br>Uzyskaj informacje na temat cen, dostępnych terminów oraz wskazówek dojazdu!</a>
+            </div>
+            <div class="ov">
+              <a href="#"><img src="images/stronaG.jpg" alt="" id="firstClone"></a>
+              <a href="#" class="link1"><span>Zapraszamy!</span><br>Rozejrzyj się na naszej stronie i dowiedz się wiecej o naszym apartamencie</a>
+            </div>
+          </div>
         </div>
         <section class="workspace">
           <div class="infoLinker">
@@ -62,7 +91,7 @@
             </div>
 
           <div class="Text">
-            <a href="#"><h2>Zobacz jak do nas dojechać!</h2></a><br>
+            <a href="#"><h2>Zobacz jak odebrać od nas klucze!</h2></a><br>
             Tutaj wytłumaczymy Ci jak odebrać klucze do naszego Apartamentu.
           </div>
           <div style="clear:both;"></div>
@@ -86,11 +115,10 @@
       </section>
 
       <div class="right">
-        <section class="phoneS">
-          <div class="">
-            <span class="phoneText">Zadzwoń i dowiedz się więcej! <br> Alina : +48 608 593 000</span>
-          </div>
-        </section>
+        <aside class="phoneS">
+          <p class="phoneText" id="T1">Apartament Premium 6 <br> ul. Środkowa 302a <br> Białka Tatrzańska <br></p>
+          <p class="phoneText" id="T2">Zadzwoń i dowiedz się więcej!<br>+48 608 593 000<br> +48 507 000 298</p>
+        </aside>
       </div>
       <div style="clear: both;"></div>
       </div>
