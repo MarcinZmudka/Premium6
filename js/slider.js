@@ -1,11 +1,15 @@
 $(()=>{
   const slide = document.querySelector('.sliderContainer');
   const images = document.querySelectorAll('.sliderContainer img');
-
   const prevBtn = document.querySelector('#prevBtn');
   const nextBtn = document.querySelector('#nextBtn');
 
-
+  const sImg = $(".sImg");
+  for(var i=0; i<sImg.length; i++){
+    console.log($(".slider").width());
+    sImg[i].style.width = $(".slider").width()+"px";
+    sImg[i].style.heigth = $(".slider").width()/2+"px";
+  }
   var counter = 1;
   const size = $(".slider").width();
   slide.style.transform = 'translateX('+(-size*counter)+'px)';
@@ -21,6 +25,7 @@ $(()=>{
     slide.style.transform = 'translateX('+(-size*counter)+'px)';
     checkPage(counter);
   });
+
   prevBtn.addEventListener('click', ()=>{
     const size = $(".slider").width();
     if (counter <=0) {
@@ -38,6 +43,7 @@ $(()=>{
       counter = images.length-2;
       slide.style.transform = 'translateX('+(-size*counter)+'px)';
     }
+
     if(images[counter].id === "firstClone"){
       slide.style.transition = "none";
       counter = images.length-counter;
@@ -60,5 +66,4 @@ function checkPage(counter){
   }
   $("#"+index).addClass("optionS");
   $("#"+index).removeClass("option");
-  console.log(counter);
 }
