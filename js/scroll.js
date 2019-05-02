@@ -1,4 +1,7 @@
 $(() =>{
+  var pos = $(".menu").offset().top;
+  $(".phoneS").css("margin-top", pos+"px");
+  $(".phoneS").css("visibility", "visible");
   var phone = $(".phoneS").offset().top;
   $(window).scroll(()=>{
     check( phone);

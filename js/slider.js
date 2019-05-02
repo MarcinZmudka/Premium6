@@ -3,13 +3,14 @@ $(()=>{
   const images = document.querySelectorAll('.sliderContainer img');
   const prevBtn = document.querySelector('#prevBtn');
   const nextBtn = document.querySelector('#nextBtn');
-
+  /** resize slidera !*/
   const sImg = $(".sImg");
   for(var i=0; i<sImg.length; i++){
     console.log($(".slider").width());
     sImg[i].style.width = $(".slider").width()+"px";
     sImg[i].style.heigth = $(".slider").width()/2+"px";
   }
+  /*ustawienie slidera na pozycji 1*/
   var counter = 1;
   const size = $(".slider").width();
   slide.style.transform = 'translateX('+(-size*counter)+'px)';
@@ -43,7 +44,6 @@ $(()=>{
       counter = images.length-2;
       slide.style.transform = 'translateX('+(-size*counter)+'px)';
     }
-
     if(images[counter].id === "firstClone"){
       slide.style.transition = "none";
       counter = images.length-counter;
